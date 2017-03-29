@@ -1,11 +1,11 @@
 //var coders = [];
       
-      function Coder (nombre, apellido, correo, contreseña){
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.correo = correo;
-        this.contraseña = contraseña;
-      }
+function Coder (nombre, apellido, correo, contreseña){
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.correo = correo;
+    this.contraseña = contraseña;
+}
 
 window.addEventListener('load', function(){
 	
@@ -74,7 +74,18 @@ window.addEventListener('load', function(){
         letrasMayusculas[i].onblur = textoMasyuscula;
       }
 	
-	var validarCorreo = function (){
+
+	function validarEmail( email ) {
+	    expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	    if ( !expr.test(email) )
+	        error.innerText = "El correo debe tener un @ y .";
+	}
+
+	validarEmail( correo.value );
+
+
+
+	/*var validarCorreo = function (){
 
 		if ( /^[\w]+@{1}[\w]+\.+[a-z]{2,3}$/.test(correo) == false){
 
@@ -85,7 +96,7 @@ window.addEventListener('load', function(){
 
 	}
 
-	correo.onblur = validarCorreo;
+	correo.onblur = validarCorreo;*/
 	
 
 

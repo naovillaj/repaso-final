@@ -2,3 +2,11 @@ body{
 	text-align: center;
 	padding: 150px;
 }
+
+#imprimir{
+	display: inline-block;
+  	background-color: #A9F5E1;
+  	margin: 30px 0 0 30px;
+  	padding: 20px 30px;
+  	border: 1px solid black;
+}
