@@ -6,19 +6,21 @@
 	<link rel="stylesheet" href="assets/css/registro.css">
 </head>
 <body>
-	<form id="datos">
+	<form id="datos" onsubmit = "return false">
 		<h1>Registra tus datos</h1>
 		<label for="nombre">Nombre: </label>
-		<input id="nombre" type="text"><br><br>
+		<input id="nombre" type="text" class = "mayuscula"><br><br>
 		<label for="apellido">Apellido: </label>
-		<input id="apellido" type="text"><br><br>
+		<input id="apellido" type="text" class = "mayuscula"><br><br>
 		<label for="correo">Correo: </label>
 		<input id="correo" type="email"><br><br>
 		<label for="contraseña">Contraseña</label>
 		<input id="contraseña" type="password"><br><br>
 	</form>
 
-	<button id="entrar">Regístrate</button>
+	<button id="entrar">Regístrate</button><br>
+	<span id="error"></span>
+	<script src=assets/js/datos.js></script>
 	
 </body>
 </html>
